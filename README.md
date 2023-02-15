@@ -1,60 +1,60 @@
 # LATIHAN1DPBO2023
 Program berbasis OOP mengunakan bahasa pemrograman C++, Java, Python, dan PHP yang menampilkan informasi daftar mahasiswa (sekumpulan objek mahasiswa) dan memiliki fitur menambah, mengubah, dan menghapus data.
 Setiap mahasiswa memiliki data nama, NIM, program studi, fakultas, dan foto profil (khusus bahasa PHP).
-
+<br />
 Note:
-- Boleh menambahkan properti/atribut baru
-- Tampilkan data selengkap-lengkapnya dalam bentuk list/tabel
-- Program dikumpulkan pada repository GitHub yang dibuat public dengan nama "LATIHAN1DPBO2023"
-- Hanya program pada branch Main yang akan dinilai dan diperiksa
-- Jika waktu pengumpulan sudah habis dan ingin mengupdate kode program, update pada branch lain karena mengupdate branch Main setelah waktu pengumpulan terlewat maka program tidak akan dinilai
-- Struktur folder :
-      + CPP
-          - program
-          - screenshot
-      + Java
-      + Python
-      + PHP
-      + README.md
+- Boleh menambahkan properti/atribut baru<br />
+- Tampilkan data selengkap-lengkapnya dalam bentuk list/tabel<br />
+- Program dikumpulkan pada repository GitHub yang dibuat public dengan nama "LATIHAN1DPBO2023"<br />
+- Hanya program pada branch Main yang akan dinilai dan diperiksa<br />
+- Jika waktu pengumpulan sudah habis dan ingin mengupdate kode program, update pada branch lain karena mengupdate branch Main setelah waktu pengumpulan terlewat maka program tidak akan dinilai<br />
+- Struktur folder :<br />
+      + CPP<br />
+          - program<br />
+          - screenshot<br />
+      + Java<br />
+      + Python<br />
+      + PHP<br />
+      + README.md<br />
 
 # Desain Program () {}
-Latihan 1 DPBO -> buat kelas mahasiswa dan fiturnya:
-Class 'Mahasiswa' {
-      -> constructor
-      -> private atr :
-            - Nama,
-            - NIM,
-            - Program studi,
-            - Fakultas,
-            - id untuk nomor setiap data.
-      -> public (setter-getter, dan methods) :
-            a. set
-            b. get
-            c. method/fitur:
-                  - menampilkan     (display/show),
-                  - menambah        (add/insert),
-                  - mengubah        (update/edit),
-                  - menghapus       (delete/erase).
-      -> destructor (ex. Java, Py)
-}
-Main program {
-      - clear/cls (optional) // supaya bersih aj
-      - 'new'/instansiasi,
-      - init (jika perlu),
-      - tampilan :
-            1. loop pakai switch-case,
-            2. exit/out sampai pilihan user,
-            3. case(s) ;
-                  3.1.) show,
-                  3.2.) insert,
-                  3.3.) update,
-                  3.4.) delete,
-                  3.5.) exit.
+Latihan 1 DPBO -> buat kelas mahasiswa dan fiturnya:<br />
+Class 'Mahasiswa' {<br />
+      -> constructor<br />
+      -> private atr :<br />
+            - Nama,<br />
+            - NIM,<br />
+            - Program studi,<br />
+            - Fakultas,<br />
+            - id untuk nomor setiap data.<br />
+      -> public (setter-getter, dan methods) :<br />
+            a. set<br />
+            b. get<br />
+            c. method/fitur:<br />
+                  - menampilkan     (display/show),<br />
+                  - menambah        (add/insert),<br />
+                  - mengubah        (update/edit),<br />
+                  - menghapus       (delete/erase).<br />
+      -> destructor (ex. Java, Py)<br />
+}<br />
+Main program {<br />
+      - clear/cls (optional) // supaya bersih aja<br />
+      - 'new'/instansiasi,<br />
+      - init (jika perlu),<br />
+      - tampilan :<br />
+            1. loop pakai switch-case,<br />
+            2. exit/out sampai pilihan user,<br />
+            3. case(s) ;<br />
+                  3.1.) show,<br />
+                  3.2.) insert,<br />
+                  3.3.) update,<br />
+                  3.4.) delete,<br />
+                  3.5.) exit.<br />
 }
 
 # Documentation () {}
 Untuk dokumentasi menggunakan snapshot/screenshot saat menjalankan program,
-dan yang dipilih salah satu yaitu dengan bahasa C++.
+dan yang dipilih salah satu yaitu dengan bahasa C++.<br />
 
 Kemudian, ada penjelasan alur programnya:
 1. compile file sesuai bahasa (c++, java, python, php) e.g. :
