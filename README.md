@@ -90,3 +90,8 @@ Kemudian, ada penjelasan alur programnya:<br />
             setelah itu langsung data akan terhapus sesuai tujuan nomor id.<br />
       &nbsp;e. terminate<br />
             &nbsp;&nbsp;ini opsi untuk langsung mengakhiri program yang sedang berjalan.<br />
+
+# Format janji
+Saya Villeneuve Andhira Suwandhi NIM 2108067 mengerjakan latihan 1<br />
+dalam mata kuliah Desain Pemrograman Berorientasi Objek untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan.<br />
+Aamiin.<br />
