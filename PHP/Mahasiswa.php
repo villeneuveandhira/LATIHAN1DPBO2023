@@ -27,7 +27,7 @@ class Mahasiswa {
     public function setId($n) {
         $this->id = $n;
     }
-    public function setMHS_ID($nim) {
+    public function setMHS_NUM($nim) {
         $this->MHS_NUM = $nim;
     }
     public function setMHS_NAME($nama) {
@@ -44,7 +44,7 @@ class Mahasiswa {
     public function getId() {
         return $this->id;
     }
-    public function getMHS_ID() {
+    public function getMHS_NUM() {
         return $this->MHS_NUM;
     }
     public function getMHS_NAME() {
@@ -58,6 +58,43 @@ class Mahasiswa {
     }
 
     // methods
+    /* to ADD data */
+    public function Insert() {
+        system('clear');
+        // Instantiate
+        $Mahasiswa1 = new Mahasiswa();
+        echo '### INSERT DATA ###<br>';
+        echo '--- No space allowed!<br>';
+        // ID data
+        echo "ID                         : ";
+        $Mahasiswa1->setId('1');
+        echo $Mahasiswa1->getId();
+        echo '<br>';
+        // NIM mahasiswa
+        echo "Masukkan NIM mahasiswa     : ";
+        $Mahasiswa1->setMHS_NUM('2108067');
+        echo $Mahasiswa1->getMHS_NUM();
+        echo '<br>';
+        // Nama mahasiswa
+        echo "Masukkan Nama mahasiswa    : ";
+        $Mahasiswa1->setMHS_NAME('Villen');
+        echo $Mahasiswa1->getMHS_NAME();
+        echo '<br>';
+        // Program studi
+        echo "Masukkan Program studi     : ";
+        $Mahasiswa1->setMHS_PRODI('Ilmu_Komputer');
+        echo $Mahasiswa1->getMHS_PRODI();
+        echo '<br>';
+        // Fakultas
+        echo "Masukkan Fakultas          : ";
+        $Mahasiswa1->setMHS_FAC('FPMIPA');
+        echo $Mahasiswa1->getMHS_FAC();
+        echo '<br>';
+        echo '<br>### Data added ... ###<br><br><br><br>';
+    }
+    
+    /*----------------------------------------------------------------*/
+
     /* to DISPLAY all data */
     public function Show($m, $n) {
         system('clear');
@@ -69,11 +106,11 @@ class Mahasiswa {
         // if at least 1 record in data
         else {
             for ($i = 0; $i < $n; $i++) {
-                echo "ID          : ".$m[$i]->id . "<br>";
-                echo "NIM         : ".$m[$i]->MHS_NUM . "<br>";
-                echo "NAMA        : ".$m[$i]->MHS_NAME . "<br>";
-                echo "PRODI       : ".$m[$i]->MHS_PRODI . "<br>";
-                echo "FAKULTAS    : ".$m[$i]->MHS_FAC . "<br>";
+                echo "ID          : ".$m[$i]->getId()."<br>";
+                echo "NIM         : ".$m[$i]->getMHS_NUM()."<br>";
+                echo "NAMA        : ".$m[$i]->getMHS_NAME()."<br>";
+                echo "PRODI       : ".$m[$i]->getMHS_PRODI()."<br>";
+                echo "FAKULTAS    : ".$m[$i]->getMHS_FAC()."<br>";
                 echo '========================================<br>';
             }
         }
@@ -81,99 +118,73 @@ class Mahasiswa {
         echo '<br><br>';
     }
 
-    /*----------------------------------------------------------------*/
+    // /* to EDIT a data by id */
+    // public function Update($m, $n) {
+    //     system('clear');
+    //     // print all data
+    //     $this->Show($m, $n);
+    //     // init
+    //     $find = 0;
+    //     $found = 0;
+    //     // find ID in data
+    //     echo '<br>### UPDATE DATA ###<br>';
+    //     $find = (int)readline('Masukkan ID mahasiswa yang ingin diubah :');
+    //     // update each attribute
+    //     for ($i = 0; $i < $n; $i++) {
+    //         // record that has same id
+    //         if ($find == $m[$i]->getId()) {
+    //             echo '<br>### updating ... ###<br>';
+    //             $m[$i]->MHS_NUM = readline("Masukkan NIM baru mahasiswa     : ");
+    //             $m[$i]->MHS_NAME = readline("Masukkan Nama baru mahasiswa    : ");
+    //             $m[$i]->MHS_PRODI = readline("Masukkan Program studi baru     : ");
+    //             $m[$i]->MHS_FAC = readline("Masukkan Fakultas baru          : ");
+    //             // sign that the current record was updated
+    //             echo '<br>### Data updated ###<br>';
+    //             // new line after
+    //             echo '<br><br>';
+    //             // it means that the record has found
+    //             $found = 1;
+    //             break;
+    //         }
+    //     }
+    //     // if the ID is not found in data
+    //     if ($found == 0) {
+    //         echo '### ID is nout found ###<br><br><br>';
+    //     }
+    // }
+    
+    // /*----------------------------------------------------------------*/
 
-    /* to ADD data */
-    public function Insert() {
-        system('clear');
-        echo '### INSERT DATA ###<br>';
-        echo '--- No space allowed!<br>';
-        // ID data
-        $this->id = (int)readline("ID                         : ");
-        echo '<br>';
-        // NIM mahasiswa
-        $this->MHS_NUM = readline("Masukkan NIM mahasiswa     : ");
-        echo '<br>';
-        // Nama mahasiswa
-        $this->MHS_NAME = readline("Masukkan Nama mahasiswa    : ");
-        echo '<br>';
-        // Program studi
-        $this->MHS_PRODI = readline("Masukkan Program studi     : ");
-        // Fakultas
-        $this->MHS_FAC = readline("Masukkan Fakultas          : ");
-        echo '<br>';
-        echo '<br>### Data added ... ###<br><br><br><br>';
-    }
-
-    /*----------------------------------------------------------------*/
-
-    /* to EDIT a data by id */
-    public function Update($m, $n) {
-        system('clear');
-        // print all data
-        $this->Show($m, $n);
-        // init
-        $find = 0;
-        $found = 0;
-        // find ID in data
-        echo '<br>### UPDATE DATA ###<br>';
-        $find = (int)readline('Masukkan ID mahasiswa yang ingin diubah :');
-        // update each attribute
-        for ($i = 0; $i < $n; $i++) {
-            // record that has same id
-            if ($find == $m[$i]->getId()) {
-                echo '<br>### updating ... ###<br>';
-                $m[$i]->MHS_NUM = readline("Masukkan NIM baru mahasiswa     : ");
-                $m[$i]->MHS_NAME = readline("Masukkan Nama baru mahasiswa    : ");
-                $m[$i]->MHS_PRODI = readline("Masukkan Program studi baru     : ");
-                $m[$i]->MHS_FAC = readline("Masukkan Fakultas baru          : ");
-                // sign that the current record was updated
-                echo '<br>### Data updated ###<br>';
-                // new line after
-                echo '<br><br>';
-                // it means that the record has found
-                $found = 1;
-                break;
-            }
-        }
-        // if the ID is not found in data
-        if ($found == 0) {
-            echo '### ID is nout found ###<br><br><br>';
-        }
-    }
-
-    /*----------------------------------------------------------------*/
-
-    /* to DELETE a data by id */
-    public function Delete($m, $n) {
-        system('clear');
-        // print all data
-        $this->Show($m, $n);
-        // init
-        $find = 0;
-        $found = 0;
-        // find ID in data
-        echo '<br>### DELETE DATA ###<br>';
-        $find = (int)readline("Masukkan ID mahasiswa yang ingin dihapus :");
-        for ($i = 0; $i < $n; $i++) {
-            // record that has same id
-            if ($find == $m[$i]->getId()) {
-                // shift record to maks
-                for ($j = $i; $j < $n; $j++) {
-                    $m[$j] = $m[$j+1];
-                }
-                // sign that the current record was deleted
-                echo '<br>### Data successfully deleted ###<br><br><br>';
-                // it means that the record has found
-                $found = 1;
-                break;
-            }
-        }
-        // if the ID is not found in data
-        if ($found  == 0) {
-            echo '<br>### ID is nout found ###<br><br><br>';
-        }
-    }
+    // /* to DELETE a data by id */
+    // public function Delete($m, $n) {
+    //     system('clear');
+    //     // print all data
+    //     $this->Show($m, $n);
+    //     // init
+    //     $find = 0;
+    //     $found = 0;
+    //     // find ID in data
+    //     echo '<br>### DELETE DATA ###<br>';
+    //     $find = (int)readline("Masukkan ID mahasiswa yang ingin dihapus :");
+    //     for ($i = 0; $i < $n; $i++) {
+    //         // record that has same id
+    //         if ($find == $m[$i]->getId()) {
+    //             // shift record to maks
+    //             for ($j = $i; $j < $n; $j++) {
+    //                 $m[$j] = $m[$j+1];
+    //             }
+    //             // sign that the current record was deleted
+    //             echo '<br>### Data successfully deleted ###<br><br><br>';
+    //             // it means that the record has found
+    //             $found = 1;
+    //             break;
+    //         }
+    //     }
+    //     // if the ID is not found in data
+    //     if ($found  == 0) {
+    //         echo '<br>### ID is nout found ###<br><br><br>';
+    //     }
+    // }
 }
 
 ?>
