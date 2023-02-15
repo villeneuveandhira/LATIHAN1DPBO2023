@@ -23,15 +23,11 @@ $n = 0;
 // Output
 echo "*** LATIHAN 1 DPBO 2023 ***<br>";
 echo "=== Informasi Daftar Mahasiswa ===<br>";
-// to add data (hardcoded data)
-$temp = new Mahasiswa();
+// to add and read data (hardcoded data)
+$temp = new Mahasiswa(); // 'new' or instantiate
 $temp->Insert();
 $obj[$n] = $temp;
 $n++;
-// to read data
-$temp = new Mahasiswa();
-$temp->Show($obj, $n);
-echo "<br>";
 
 /*
 echo "<br>Choose option :<br>";
