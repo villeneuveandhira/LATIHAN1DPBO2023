@@ -62,7 +62,7 @@ Main program {<br />
 Untuk dokumentasi menggunakan snapshot/screenshot saat menjalankan program,
 dan yang dipilih salah satu yaitu dengan bahasa C++.<br />
 
-Kemudian, ada penjelasan alur programnya:<br />
+Kemudian, ada penjelasan alur programnya:
 1. compile file sesuai bahasa (c++, java, python, php) e.g. :<br />
       &nbsp;(C++) :<br />
             &nbsp;&nbsp;-> g++ -c *.cpp<br />
