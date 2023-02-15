@@ -58,69 +58,157 @@ class Mahasiswa {
     }
 
     // methods
+    
+    /*----------------------------------------------------------------*/
+    
     /* to ADD data */
     public function Insert() {
-        system('clear');
         // Instantiate
         $Mahasiswa1 = new Mahasiswa();
-        echo '### INSERT DATA ###<br>';
-        echo '--- No space allowed!<br>';
+        echo '<br>';
+        echo '########## Daftar Mahasiswa ##########<br>';
+        /* Data 1 */
         // ID data
         echo "ID                         : ";
         $Mahasiswa1->setId('1');
         echo $Mahasiswa1->getId();
         echo '<br>';
         // NIM mahasiswa
-        echo "Masukkan NIM mahasiswa     : ";
+        echo "NIM mahasiswa     : ";
         $Mahasiswa1->setMHS_NUM('2108067');
         echo $Mahasiswa1->getMHS_NUM();
         echo '<br>';
         // Nama mahasiswa
-        echo "Masukkan Nama mahasiswa    : ";
+        echo "Nama mahasiswa    : ";
         $Mahasiswa1->setMHS_NAME('Villen');
         echo $Mahasiswa1->getMHS_NAME();
         echo '<br>';
         // Program studi
-        echo "Masukkan Program studi     : ";
+        echo "Program studi     : ";
         $Mahasiswa1->setMHS_PRODI('Ilmu_Komputer');
         echo $Mahasiswa1->getMHS_PRODI();
         echo '<br>';
         // Fakultas
-        echo "Masukkan Fakultas          : ";
+        echo "Fakultas          : ";
         $Mahasiswa1->setMHS_FAC('FPMIPA');
         echo $Mahasiswa1->getMHS_FAC();
         echo '<br>';
-        echo '<br>### Data added ... ###<br><br><br><br>';
+        echo '========================================<br>';
+        /* Data 2 */
+        echo "ID                         : ";
+        $Mahasiswa1->setId('2');
+        echo $Mahasiswa1->getId();
+        echo '<br>';
+        echo "NIM mahasiswa     : ";
+        $Mahasiswa1->setMHS_NUM('2102313');
+        echo $Mahasiswa1->getMHS_NUM();
+        echo '<br>';
+        echo "Nama mahasiswa    : ";
+        $Mahasiswa1->setMHS_NAME('Kamal');
+        echo $Mahasiswa1->getMHS_NAME();
+        echo '<br>';
+        echo "Program studi     : ";
+        $Mahasiswa1->setMHS_PRODI('Ilmu_Komputer');
+        echo $Mahasiswa1->getMHS_PRODI();
+        echo '<br>';
+        echo "Fakultas          : ";
+        $Mahasiswa1->setMHS_FAC('FPMIPA');
+        echo $Mahasiswa1->getMHS_FAC();
+        echo '<br>';
+        echo '========================================<br>';
+        /* Data 3 */
+        echo "ID                         : ";
+        $Mahasiswa1->setId('3');
+        echo $Mahasiswa1->getId();
+        echo '<br>';
+        echo "NIM mahasiswa     : ";
+        $Mahasiswa1->setMHS_NUM('1901321');
+        echo $Mahasiswa1->getMHS_NUM();
+        echo '<br>';
+        echo "Nama mahasiswa    : ";
+        $Mahasiswa1->setMHS_NAME('Rival');
+        echo $Mahasiswa1->getMHS_NAME();
+        echo '<br>';
+        echo "Program studi     : ";
+        $Mahasiswa1->setMHS_PRODI('Ilmu_Komputer');
+        echo $Mahasiswa1->getMHS_PRODI();
+        echo '<br>';
+        echo "Fakultas          : ";
+        $Mahasiswa1->setMHS_FAC('FPMIPA');
+        echo $Mahasiswa1->getMHS_FAC();
+        echo '<br>';
+        echo '========================================<br>';
+        /* Data 4 */
+        echo "ID                         : ";
+        $Mahasiswa1->setId('4');
+        echo $Mahasiswa1->getId();
+        echo '<br>';
+        echo "NIM mahasiswa     : ";
+        $Mahasiswa1->setMHS_NUM('2105673');
+        echo $Mahasiswa1->getMHS_NUM();
+        echo '<br>';
+        echo "Nama mahasiswa    : ";
+        $Mahasiswa1->setMHS_NAME('Naufal');
+        echo $Mahasiswa1->getMHS_NAME();
+        echo '<br>';
+        echo "Program studi     : ";
+        $Mahasiswa1->setMHS_PRODI('Ilmu_Komputer');
+        echo $Mahasiswa1->getMHS_PRODI();
+        echo '<br>';
+        echo "Fakultas          : ";
+        $Mahasiswa1->setMHS_FAC('FPMIPA');
+        echo $Mahasiswa1->getMHS_FAC();
+        echo '<br>';
+        echo '========================================<br>';
+        /* Data 5 */
+        echo "ID                         : ";
+        $Mahasiswa1->setId('5');
+        echo $Mahasiswa1->getId();
+        echo '<br>';
+        echo "NIM mahasiswa     : ";
+        $Mahasiswa1->setMHS_NUM('1901377');
+        echo $Mahasiswa1->getMHS_NUM();
+        echo '<br>';
+        echo "Nama mahasiswa    : ";
+        $Mahasiswa1->setMHS_NAME('Afina');
+        echo $Mahasiswa1->getMHS_NAME();
+        echo '<br>';
+        echo "Program studi     : ";
+        $Mahasiswa1->setMHS_PRODI('Ilmu_Komputer');
+        echo $Mahasiswa1->getMHS_PRODI();
+        echo '<br>';
+        echo "Fakultas          : ";
+        $Mahasiswa1->setMHS_FAC('FPMIPA');
+        echo $Mahasiswa1->getMHS_FAC();
+        echo '<br>';
+        echo '========================================<br>';
     }
     
-    /*----------------------------------------------------------------*/
-
-    /* to DISPLAY all data */
-    public function Show($m, $n) {
-        system('clear');
-        echo '########## Daftar Mahasiswa ##########<br>';
-        // if there isn't data yet
-        if ($n == 0) {
-            echo '!!!No data!!!<br>';
-        }
-        // if at least 1 record in data
-        else {
-            for ($i = 0; $i < $n; $i++) {
-                echo "ID          : ".$m[$i]->getId()."<br>";
-                echo "NIM         : ".$m[$i]->getMHS_NUM()."<br>";
-                echo "NAMA        : ".$m[$i]->getMHS_NAME()."<br>";
-                echo "PRODI       : ".$m[$i]->getMHS_PRODI()."<br>";
-                echo "FAKULTAS    : ".$m[$i]->getMHS_FAC()."<br>";
-                echo '========================================<br>';
-            }
-        }
-        // new line after
-        echo '<br><br>';
-    }
+    // /* to DISPLAY all data */
+    // public function Show($m, $n) {
+    //     echo '########## Daftar Mahasiswa ##########<br>';
+    //     // if there isn't data yet
+    //     if ($n == 0) {
+    //         echo '!!!No data!!!<br>';
+    //     }
+    //     // if at least 1 record in data
+    //     else {
+    //         for ($i = 0; $i < $n; $i++) {
+    //             echo "ID          : ".$m[$i]->getId()."<br>";
+    //             echo "NIM         : ".$m[$i]->getMHS_NUM()."<br>";
+    //             echo "NAMA        : ".$m[$i]->getMHS_NAME()."<br>";
+    //             echo "PRODI       : ".$m[$i]->getMHS_PRODI()."<br>";
+    //             echo "FAKULTAS    : ".$m[$i]->getMHS_FAC()."<br>";
+    //             echo '========================================<br>';
+    //         }
+    //     }
+    //     // new line after
+    //     echo '<br><br>';
+    // }
 
     // /* to EDIT a data by id */
     // public function Update($m, $n) {
-    //     system('clear');
+        //     system('clear');
     //     // print all data
     //     $this->Show($m, $n);
     //     // init
@@ -131,12 +219,12 @@ class Mahasiswa {
     //     $find = (int)readline('Masukkan ID mahasiswa yang ingin diubah :');
     //     // update each attribute
     //     for ($i = 0; $i < $n; $i++) {
-    //         // record that has same id
-    //         if ($find == $m[$i]->getId()) {
-    //             echo '<br>### updating ... ###<br>';
-    //             $m[$i]->MHS_NUM = readline("Masukkan NIM baru mahasiswa     : ");
-    //             $m[$i]->MHS_NAME = readline("Masukkan Nama baru mahasiswa    : ");
-    //             $m[$i]->MHS_PRODI = readline("Masukkan Program studi baru     : ");
+        //         // record that has same id
+        //         if ($find == $m[$i]->getId()) {
+            //             echo '<br>### updating ... ###<br>';
+            //             $m[$i]->MHS_NUM = readline("Masukkan NIM baru mahasiswa     : ");
+            //             $m[$i]->MHS_NAME = readline("Masukkan Nama baru mahasiswa    : ");
+            //             $m[$i]->MHS_PRODI = readline("Masukkan Program studi baru     : ");
     //             $m[$i]->MHS_FAC = readline("Masukkan Fakultas baru          : ");
     //             // sign that the current record was updated
     //             echo '<br>### Data updated ###<br>';
