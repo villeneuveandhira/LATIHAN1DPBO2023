@@ -9,13 +9,13 @@ Note:
 - Hanya program pada branch Main yang akan dinilai dan diperiksa<br />
 - Jika waktu pengumpulan sudah habis dan ingin mengupdate kode program, update pada branch lain karena mengupdate branch Main setelah waktu pengumpulan terlewat maka program tidak akan dinilai<br />
 - Struktur folder :<br />
-      + CPP<br />
-          - program<br />
-          - screenshot<br />
-      + Java<br />
-      + Python<br />
-      + PHP<br />
-      + README.md<br />
+      \t+ CPP<br />
+          \t\t- program<br />
+          \t\t- screenshot<br />
+      \t+ Java<br />
+      \tPython<br />
+      \tPHP<br />
+      \tREADME.md<br />
 
 # Desain Program () {}
 Latihan 1 DPBO -> buat kelas mahasiswa dan fiturnya:<br />
@@ -56,32 +56,32 @@ Main program {<br />
 Untuk dokumentasi menggunakan snapshot/screenshot saat menjalankan program,
 dan yang dipilih salah satu yaitu dengan bahasa C++.<br />
 
-Kemudian, ada penjelasan alur programnya:
-1. compile file sesuai bahasa (c++, java, python, php) e.g. :
-      (C++) :
-            -> g++ -c *.cpp
-            -> g++ main.cpp -o main.exe
-2. run programnya e.g. :
-            -> .\main (powershell)
-3. setelah itu, akan muncul judul ('latihan-1-dpbo-2023') beserta pilihan opsinya dengan angka satu sampai lima
-4. pilih salah satu opsi untuk memulai program CRUD sederhana dengan file lokal
-5. pilihannya ada lima mulai dari;
-      a. show
+Kemudian, ada penjelasan alur programnya:<br />
+1. compile file sesuai bahasa (c++, java, python, php) e.g. :<br />
+      (C++) :<br />
+            -> g++ -c *.cpp<br />
+            -> g++ main.cpp -o main.exe<br />
+2. run programnya e.g. :<br />
+            -> .\main (powershell)<br />
+3. setelah itu, akan muncul judul ('latihan-1-dpbo-2023') beserta pilihan opsinya dengan angka satu sampai lima<br />
+4. pilih salah satu opsi untuk memulai program CRUD sederhana dengan file lokal<br />
+5. pilihannya ada lima mulai dari;<br />
+      a. show<br />
             ini untuk menampilkan semua data informasi mahasiswa yang dimasukkan tapi,
             apabila belum ada masukkan setelah program di-run maka tidak akan muncul datanya,
-            atau ada message/pesan warning tidak ada data.
-      b. insert
+            atau ada message/pesan warning tidak ada data.<br />
+      b. insert<br />
             dipilihan ke-dua untuk menambahkan data mahasiswa,
             pertama akan diminta untuk memasukkan nomor id, dilanjut nim, nama, prodi, dan fakultas,
-            di akhir akan ada pesan bahwa data berhasil dimasukkan.
-      c. update
+            di akhir akan ada pesan bahwa data berhasil dimasukkan.<br />
+      c. update<br />
             disini pilihan untuk mengubah data yang ada,
             sebelum mengubah akan ditampilkan data yang ada saat ini,
             kemudian diminta nomor id tujuan yang akan diubah,
-            lalu mulai mengubah data setiap atributnya satu per satu.
-      d. delete
+            lalu mulai mengubah data setiap atributnya satu per satu.<br />
+      d. delete<br />
             hampir sama dengan update akan ditampilkan terlebih dahulu data saat ini,
             akan tetapi berbeda disini fitur untuk menghapus data dengan nomor id tujuan yang dimasukkan user,
-            setelah itu langsung data akan terhapus sesuai tujuan nomor id.
-      e. terminate
-            ini opsi untuk langsung mengakhiri program yang sedang berjalan.
+            setelah itu langsung data akan terhapus sesuai tujuan nomor id.<br />
+      e. terminate<br />
+            ini opsi untuk langsung mengakhiri program yang sedang berjalan.<br />
