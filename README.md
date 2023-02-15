@@ -9,7 +9,7 @@ Note:
 - Hanya program pada branch Main yang akan dinilai dan diperiksa<br />
 - Jika waktu pengumpulan sudah habis dan ingin mengupdate kode program, update pada branch lain karena mengupdate branch Main setelah waktu pengumpulan terlewat maka program tidak akan dinilai<br />
 - Struktur folder :<br />
-      \t+ CPP<br />
+      &nbsp;+ CPP<br />
           \t\t- program<br />
           \t\t- screenshot<br />
       \t+ Java<br />
